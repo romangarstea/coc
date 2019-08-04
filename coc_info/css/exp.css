@@ -1,0 +1,23 @@
+
+
+
+.exp{
+    margin-top: 200px;
+    overflow: hidden;
+    color: #ffd741;
+    background-color: #4d4d4d;
+}
+
+.scroll{
+    position: relative;
+    top: 0px;
+}
+
+.outpout{
+    margin-top: 50px;
+    background-color: #3a3a3a;
+    color: #d6d6d6;
+    font-size: 20px;
+    font-family: Arial;
+
+}

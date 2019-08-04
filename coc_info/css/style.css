@@ -1,0 +1,151 @@
+/*
+ *   BLACK-GRY 
+ *     90     80     70     60     50     40     30     20     10
+ *   1b1b1b 303030 474747 5e5e5e 777777 919191 ababab c6c6c6 e2e2e2
+ *     RED           BLU         YELLOW        GREEN
+ *   c22a51 f13364 2a8bc2 33acf1 e2b02c ffee79 a0c22a cff133
+ */
+
+* { margin: 0px;
+	padding: 0px;}
+
+body {
+	background-color: white;
+	font-size: 1em;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;}
+
+section {
+	background-color: white;
+	max-width: 1400px;
+	width: 100%;
+	padding: 0px;	
+    margin: 0px auto;
+	height:100vh;
+}
+
+header {
+	padding: 0px;
+	margin:0px;
+	background-color: #333436;
+	color:#DBDBDB;
+	margin-bottom: 50px;
+}
+
+article  {
+	text-align:center;
+	background-color:white;
+	padding-bottom:150px;
+}
+
+
+
+/*-------------------------------------------------*/
+/* Nav */
+/*-------------------------------------------------*/
+
+
+.simple-nav ul {
+	display: block;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	background: hsl(0, 0%, 15%);
+}
+
+.simple-nav li{
+	border-bottom: 1px solid white;
+}
+
+.simple-nav li a {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-decoration: none;
+	color: white;
+	padding: .6em 1em;
+}
+
+.simple-nav li a:hover {
+	background: hsl(0, 0%, 25%);
+}
+
+header h1{
+	display: none;
+}
+
+/* pour les ecrans plus grands 40em (x16px) */
+@media screen and (min-width: 30em) {
+	.simple-nav ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: center;
+		/*tester les different alignements*/
+	}
+	.simple-nav li {
+		flex: 0 0 auto;
+		background-color: #c22a51;
+		/*agrandir la boite li, pas de shrink, la taille de lelement par defaut*/
+		text-align: center;
+		/*centrer texte dans la boite li*/
+	}
+	header h1 {
+		display: block;
+		padding: 10px 20px;
+		font-weight: 100;
+		color: #ffffff;
+		font-size: 1.6em;
+		text-align: left;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*article*/	
+/*----------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+/*  table  ------------------------------*/		
+table {
+    padding-top: 40px;
+    width: 100%; 
+    
+    color: #393939;
+}
+
+table, th, td {
+    border: 1px dotted #adadad;
+   	border-collapse: collapse;
+	padding:5px 5px;
+	height:5px;
+}
+
+table tr:nth-child(even) {
+    background-color: #eee;
+}
+table tr:nth-child(odd) {
+   background-color:#fff;
+}
+table th {
+	background-color: #434343;
+	color: #C5C5C5;
+	text-align:left;
+	padding-left:30px;
+	height:30px
+}

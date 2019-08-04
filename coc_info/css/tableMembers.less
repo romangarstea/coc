@@ -1,0 +1,764 @@
+/*
+
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300i');
+/*font-family: 'Open Sans', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200i');
+/*font-family: 'Montserrat', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+/*font-family: 'Bad Script', cursive;*/
+
+@gr10: #1b1b1b;
+@gr20: #303030;
+@gr30: #474747;
+@gr40: #5e5e5e;
+@gr50: #777777;
+@gr60: #919191;
+@gr70: #ababab;
+@gr80: #c6c6c6;
+@gr90: #e2e2e2;
+
+
+.colRed {
+  color: #f60065;
+  margin-left: 3px;
+}
+
+
+
+.articleBox {
+  width: 94%;
+  margin-left: 3%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  color: #444444;
+}
+.articleRow {
+  flex: 0 1 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.articleCol {
+  display: flex;
+  justify-content: center;
+  flex: 0 0 50%;
+  margin-bottom: 20px;
+}
+
+
+/* 01 01 --------------------*/
+.a11{
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#badge {
+  flex: 0 1 100px;
+  margin-right: 20px;
+
+}
+.badge_txt{}
+#badge_txtNameClan{
+  font-size: 1.4em;
+  color: @gr30;
+  white-space: nowrap;
+}
+.badge_elements{
+  display: flex;
+  color: @gr40;
+}
+#badge_elementsTag{
+  flex: 1 1 auto;
+  margin-right: 6px;
+}
+#badge_elementsLocationFlag{}
+#badge_elementsLocationTxt{}
+
+
+
+
+/* 01 02 --------------------*/
+.a12{
+  display: flex;
+  flex: 0 1 450px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.a12_box{
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+}
+.a12_img{
+  flex: 0 1 auto;
+  text-align: left;
+  padding-right: 10px;
+}
+.a12_txt{
+  flex: 0 1 50px;
+  white-space: nowrap;
+  font-size: 1.4em;
+
+  //padding-right: 30px;
+}
+.txtBold{
+  font-weight: 600;
+  color: @gr30;
+}
+.txtBt{}
+
+/* 02 01 --------------------*/
+.a21{
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction:row;
+  justify-content: center;
+}
+#description{
+  max-width: 400px;
+  font-family: 'Bad Script', cursive;
+  font-size: 1.6em;
+  line-height: 30px;
+  padding: 0px 20px;
+  color: #585a5b;
+}
+
+#table{
+  padding-bottom: 100px;
+}
+
+/* 02 02 --------------------*/
+.a22 {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+}
+.a22r {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex:1 1 auto;
+
+  font-family: 'Open Sans', sans-serif;
+  margin-top: -6px;
+}
+.a22rc1 {
+  flex: 0 1 160px;
+  text-align: left;
+  color: #5c5d5c;
+  white-space: nowrap;
+  font-size: 18px;
+}
+.a22rc2 {
+  flex: 0 1 80px;
+  text-align: left;
+  color: #818281;
+  margin-left: 20px;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+/* 03 01 --------------------*/
+.a31{
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 450px;
+  padding: 0px 10px;
+}
+.a31r{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.statut_h{
+  font-size: 0.6em;
+  color: #656565;
+  margin-left: 10px;
+  margin-top: 6px;
+}
+.th_h{
+  display: flex;
+  color: dimgray;
+  font-size: 0.6em;
+  margin-top: -4px;
+  margin-right: 2px;
+  text-align: left;
+}
+.nick_h{
+  display: flex;
+  flex:1 1 300px;
+  overflow: hidden;
+
+  align-items: center;
+  font-size: 16px;
+  color:@gr30;
+
+  white-space: nowrap;
+}
+.name_h{
+  font-size: 12px;
+  color:@gr40;
+  margin-left: 6px;
+  white-space: nowrap;
+}
+
+.ligue_h{
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+
+.star_h{
+  display: flex;
+  flex:0 0 90px;
+  overflow: hidden;
+  align-items: center;
+  flex-wrap: nowrap;
+  color:@gr40;
+}
+
+.star_h img{
+  margin-right: 10px;
+  margin-top:-2px;
+}
+
+.heroes_box{
+  display: flex;
+  flex:0 0 110px;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.heroes_h{
+  flex: 0 0 35px;
+  flex-wrap: nowrap;
+  text-align: left;
+  color: @gr60;
+}
+.index_h{
+  color: dimgray;
+  font-size: 0.8em;
+  color: @gr30;
+}
+
+
+/* 03 02 --------------------*/
+.a32 {
+  display: flex;
+  flex: 0 0 20px;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  margin-top: 30px;
+}
+.a32r {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  font-family: 'Open Sans', sans-serif;
+  margin-top: -6px;
+}
+.a32rc1 {
+  flex: 0 1 90px;
+  text-align: left;
+  color: #5c5d5c;
+  white-space: nowrap;
+  font-size: 18px;
+}
+.index_th{
+  color: #ff575d;
+}
+.a32rc2 {
+  flex: 0 1 30px;
+  text-align: left;
+  color: #818281;
+  margin-left: 20px;
+  white-space: nowrap;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+  .a12 {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .articleCol {
+    flex: 0 0 100%;
+  }
+  .a22 {
+    margin-top: 25px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#table {
+  width: 100%;
+  margin: 0px auto;
+}
+.tabMembers{
+  padding: 0px;
+  margin: 0px;
+}
+.tabMembersRow{
+  width: 94%;
+  margin-left: 3%;
+  color: white;
+
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items:center;
+}
+
+
+/*--------------------*/
+/* util */
+/*--------------------*/
+.mr{
+  margin-right: 0.4em;
+}
+.pl1 {
+  padding-left: 1em;
+}
+.ac {
+  text-align: center;
+}
+
+
+.txtBt{
+  color: #919191;
+  font-size: 0.6em;
+  text-align: left;
+  height:1.2em;
+  padding-bottom: 5px;
+}
+.textBt_center{
+  text-align:center;
+}
+
+
+.title {
+  display: flex;
+  align-items: baseline;
+}
+
+
+/* 01 --------------------*/
+.nr{
+  flex: 0 0 30px;
+}
+.nr_bgr{
+  border-radius: 5px;
+  background: #474747;
+  width: 30px;
+  height: 30px;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.nr_text{
+  font-size: 18px;
+  font-weight: 600;
+  text-shadow: 1px 1px 3px black;
+}
+/* 02 --------------------*/
+.rank{
+  flex: 0 0 25px;
+}
+.rank_bgr {
+  height: 39px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.rank_textUp{
+  color: #4f4f4f;
+  text-align: center;
+  font-size: 1em;
+}
+/* 03 --------------------*/
+.league{
+  flex: 0 0 36px;
+}
+.league_img{}
+/* 04 --------------------*/
+.trophies{
+  flex: 0 1 100px;
+  display: flex;
+  justify-content: center;
+}
+.trophies_bgr{
+  width: 80px;
+  height: 30px;
+  background: gold;
+  border-radius: 3px;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+}
+.trophies_text{
+  font-weight: 900;
+  margin-bottom: 2px;
+  text-shadow: 0px 0px 1px #3a3a3a;
+}
+.trophies_img{
+  margin-top: 3px;
+  margin-left: 2px;
+}
+/* 05 --------------------*/
+.level{
+  flex: 0 1 60px;
+}
+.level_bgr{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  width: 40px;
+  height: 40px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url("../image/expLevel.png");
+}
+.level_text{
+  font-weight: 600;
+  text-shadow: 2px 2px 2px black;
+  margin-right: 4px;
+}
+/* 06 --------------------*/
+.warStars{
+  flex: 0 1 100px;
+  display: flex;
+  justify-content: center;
+}
+.warStars_bgr{
+  width: 80px;
+  height: 30px;
+  background-color: #fc2d42;
+  border-radius: 3px;
+  display:flex;
+  flex-direction:row;
+  justify-content: flex-start;
+  align-items:center;
+}
+.warStars_text{
+  font-weight: 600;
+  margin-bottom: 2px;
+  color: #f0f3f0;
+}
+.warStars_img{
+  margin-top: -3px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+/* 07 --------------------*/
+.th{
+  flex: 0 0 15px;
+  text-align: center;
+}
+.th_text{
+  color: dimgray;
+  font-size: 0.6em;
+  margin-top: -15px;
+  text-align: center;
+}
+/* 08--------------------*/
+.nik{
+  flex: 1 1 160px;
+  min-width: 90px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.nik_bgr{
+  height: 39px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.nik_textUp{
+  color: #4f4f4f;
+  text-align: left;
+  font-size: 1em;
+}
+/* 09 --------------------*/
+.age{
+  flex: 0 0 25px;
+  overflow: hidden;
+}
+.age_bgr {
+  height: 39px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.age_textUp{
+  color: #4f4f4f;
+  text-align: center;
+  font-size: 1em;
+}
+/* 10 --------------------*/
+.name{
+  flex: 1 2 160px;
+  overflow: hidden;
+}
+.name_bgr{
+  height: 39px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.name_textUp{
+  font-size: 1em;
+  color: #2a2a2a;
+  text-align: left;
+  overflow: hidden;
+}
+/* 11 --------------------*/
+.time{
+  flex: 0 0 45px;
+  overflow: hidden;
+}
+.time_bgr {
+  height: 39px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.time_textUp{
+  text-align: center;
+  font-family: 'Exo 2', sans-serif;
+  color: #2a2a2a;
+  font-size: 1em;
+}
+/* 12 --------------------*/
+.timeIndex{
+  flex: 1 8 25px;
+  min-width: 20px;
+  height:30px;
+  overflow: hidden;
+}
+.timeIndex_text{
+  color: dimgray;
+  font-size: 0.6em;
+  text-align: left;
+}
+/* 13 --------------------*/
+.country{
+  flex: 1 1 160px;
+  overflow: hidden;
+}
+.country_bgr {
+  height: 39px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.country_textUp{
+  font-size: 1em;
+  color: #2a2a2a;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+}
+/* 14 --------------------*/
+.city{
+  flex: 1 1 160px;
+  overflow: hidden;
+}
+.city_bgr {
+  height: 39px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.city_textUp{
+  font-size: 1em;
+  color: #2a2a2a;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+}
+/* 15 --------------------*/
+.status{
+  flex: 0 0 20px;
+}
+.status_bgr {
+  display: flex;
+  height: 2.2em;
+  justify-content: center;
+  align-items: center;
+}
+.status_text {
+  color: #4f4f4f;
+  font-size: 1em;
+  text-align: center;
+  margin-top: -13px;
+}
+/* 16 --------------------*/
+.old{
+  flex: 0 0 40px;
+}
+.old_bgr {
+  height: 39px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.old_textUp{
+  font-size: 1em;
+  color: #4d4d4d;
+  text-align: center;
+}
+/* 17 --------------------*/
+.troops{
+  flex: 0 0 110px;
+}
+.troops_bgr {
+  height: 39px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.troops_textUp{
+  width: 110px;
+  background-color: #a0c22a;
+  border-radius: 2px;
+  color: white;
+  text-align: center;
+}
+/*--------------------*/
+@media screen and (max-width: 1100px) {
+  .country {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .age {
+    display: none;
+  }
+  .time{
+    display: none;
+  }
+  .timeIndex{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .old {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .address {
+    display: none;
+  }
+  .city {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .name {
+    display: none;
+  }
+}
+@media screen and (max-width: 650px) {
+  .trophies {
+    display: none;
+  }
+}
+@media screen and (max-width: 550px) {
+  .status {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .rank {
+    display: none;
+  }
+  .league {
+    display: none;
+  }
+
+}
+@media screen and (max-width: 450px) {
+  .warStars {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .rank {
+    display: none;
+  }
+}
+
+
+
+.sort{
+  color: #f13364;
+  font-size: 1.1em;
+}
+.sort:hover{
+  color: #303034;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

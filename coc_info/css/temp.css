@@ -1,0 +1,122 @@
+/*---------------------------------------------------------*/
+/* Select Box */
+/* https://www.w3schools.com/howto/howto_custom_select.asp */
+/*---------------------------------------------------------*/
+
+/*the container must be positioned relative:*/
+.custom-select {
+    position: relative;
+    font-family: Arial;
+}
+.custom-select select {
+    display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    border-bottom: 5px solid #e7e7e7;
+    height: 40px;
+    cursor: pointer;
+    background-color: #ffffff;
+
+    font-family: 'Exo 2', sans-serif;
+    font-size: 30px;
+    color: #989898;
+    font-weight: 300;
+
+}
+
+.select-selected:hover {
+    color: #686868;
+    font-size: 32px;
+    transition: 0.2s all ;
+}
+
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 18px;
+    right: 3px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #989898 transparent transparent transparent;
+}
+
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #989898 transparent;
+    top: 9px;
+}
+/*style the items (options), including the selected item:*/
+.select-items div {
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    user-select: none;
+}
+.select-items div{
+    color: #a0a0a0;
+    /*transition: color .2s ease;*/
+    /*border-color: transparent transparent #ff842d transparent;*/
+}
+/*style items (options):*/
+.select-items {
+    position: absolute;
+    background-color: #ffffff;
+    font-family: 'Exo 2', sans-serif;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    height: 300px;
+    overflow-y: scroll;
+
+}
+/*hide the items when the select box is closed:*/
+.select-hide {
+    display: none;
+}
+.select-items div:hover {
+    /*background-color: #dd8823;*/
+    color: #e47310;
+    /*padding-left: 30px;*/
+    background-color: #f3f3f3;
+    border-left: 10px solid red;
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    /*transition: color 0.1s ease;*/
+}
+
+
+
+
+
+/*----------------------------------------------------------------*/
+/* Scrolbar */
+/* https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
+/*----------------------------------------------------------------*/
+::-webkit-scrollbar {
+    width: 25px;
+}
+
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #e4e4e4;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #c7c7c7;
+}

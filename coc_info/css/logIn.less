@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400');
+
+@bkg: #f6f6f6;
+@txt: #00c8ff;
+@line: #77ccff;
+@flash:10px;
+@fontSize:30px;
+@pPlacholder:10px;
+
+html body {
+  height: 100%;
+}
+section{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: @bkg;
+}
+.formBox{
+  position: absolute;
+  width: 400px;
+  top:40%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+form>div{
+  margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+/*------------------------------------------------*/
+/* Select Box */
+/*------------------------------------------------*/
+/* https://www.w3schools.com/howto/howto_custom_select.asp */
+/*the container must be positioned relative:*/
+
+.custom-select {
+  position: relative;
+}
+.custom-selectt {
+  position: relative;
+}
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+.custom-selectt select {
+  display: none; /*hide original SELECT element:*/
+}
+.select-selected {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  background-color: @bkg;
+  padding-left: @pPlacholder;
+  border-bottom: 6px solid @line;
+  cursor: pointer;
+  transition: font-size 0.2s;
+
+  font-family: 'Exo 2', sans-serif;
+  font-size: @fontSize;
+  color: @txt;
+
+}
+.select-selected:hover{
+  font-size: @fontSize+4;
+  transition: font-size 0.2s;
+}
+
+
+// FLASH
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: @flash;
+  right: 10px;
+  width: 10px;
+  height: 10px;
+  border-bottom: 6px solid @txt;
+  border-left: 6px solid @txt;
+  transform: rotate(-45deg);
+  transition: transform 0.2s ease-in ;
+}
+// FLASH:active
+.select-selected.select-arrow-active:after {
+  transform: rotate(135deg);
+  top: @flash;
+  transition: transform 0.2s ease-out;
+}
+
+
+
+/*style the items (options), including the selected item:*/
+.select-items div {
+  color: @txt;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.select-items .scroll div:hover {
+  background-color: #ececec;
+}
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: @bkg;
+  top: 100%;
+
+  padding-left: @pPlacholder;
+  left: 0;
+  right: 0;
+  z-index: 99;
+
+  //animation: example 5s linear 2s infinite alternate;
+}
+// scrol bar seulement pour users select
+.custom-selectt .select-items {
+  max-height: 250px;
+  overflow: hidden;
+  //animation: example 5s linear 2s infinite alternate;
+}
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+  transition: display 2s;
+}
+
+
+
+.flexDiv{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+div>.nr{
+  color: @bkg;
+  width: 30px;
+  text-align: right;
+  margin-right: 10px;
+  user-select: none;
+  padding-left: -40px;
+}
+.select-items .scroll div:hover .nr{
+  background-color: #ff5a55;
+
+}
+
+div>.name{
+  color: #00c8ff;
+  user-select: none;
+  white-space: nowrap;
+}
+//.select-items div:hover .name{
+//  transition: background-color 0.2s;
+//}
+
+
+div>.tag{
+  color: @bkg;
+  font-size: 16px;
+  margin-left: 20px;
+  user-select: none;
+  padding: 0px 20px;
+  flex: 1 1 auto;
+  align-self: stretch;
+}
+
+.select-items .scroll div:hover .tag{
+  background-color: #d5d5d5;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------*/
+/* Password Submit */
+/*------------------------*/
+input[type=password] {
+  width:100%;
+  height: 40px;
+  box-sizing: border-box;
+
+  color: #aaaaaa;
+  background-color: #f6f6f6;
+  box-sizing: border-box;
+  border: transparent;
+  border-bottom: 6px solid red;
+
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  padding-left: @pPlacholder;
+}
+
+input[type=password]:focus, input[type=text]:hover {
+  border-bottom: 6px solid red;
+  outline: none;
+}
+
+
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #cdcdcd;
+  opacity: 1; /* Firefox */
+}
+
+input[type=submit] {
+
+  background-color: #5e5e5e;
+  font-size: 30px;
+  font-family: 'Exo 2', sans-serif;
+  color: #eaeaea;
+  padding: 1px 20px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.8s all ;
+}
+input[type=submit]:hover {
+  background-color: #ff3924;
+  transition: 0.2s all ;
+}
+
+.submitBut{
+  width:100%;
+  text-align: right;
+}
+
+
+
+/*----------------------------------------------------------------*/
+/* Scrolbar */
+/* https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
+/*----------------------------------------------------------------*/
+
+//::-webkit-scrollbar {
+//  width: 25px;
+//}
+//
+///* Track */
+//::-webkit-scrollbar-track {
+//  background: @bkg;
+//}
+//
+///* Handle */
+//::-webkit-scrollbar-thumb {
+//  background: @bkg;
+//}
+//
+///* Handle on hover */
+//::-webkit-scrollbar-thumb:hover {
+//  background: @bkg;
+//}
+
+.scroll{
+  position: relative;
+  top: 0px;
+}

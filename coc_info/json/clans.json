@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "tag": "#8CQJLC0Q",
+      "name": "МЫ - ВЗРОСЛЫЕ",
+      "type": "inviteOnly",
+      "location": {
+        "id": 32000062,
+        "name": "Congo (Republic)",
+        "isCountry": true,
+        "countryCode": "CD"
+      },
+      "badgeUrls": {
+        "small": "https://api-assets.clashofclans.com/badges/70/-rlFulJpENfam2L1tyLD4UIj0564ecrj903d_UYF4Fg.png",
+        "large": "https://api-assets.clashofclans.com/badges/512/-rlFulJpENfam2L1tyLD4UIj0564ecrj903d_UYF4Fg.png",
+        "medium": "https://api-assets.clashofclans.com/badges/200/-rlFulJpENfam2L1tyLD4UIj0564ecrj903d_UYF4Fg.png"
+      },
+      "clanLevel": 14,
+      "clanPoints": 33521,
+      "clanVersusPoints": 0,
+      "requiredTrophies": 2000,
+      "warFrequency": "always",
+      "warWinStreak": 2,
+      "warWins": 308,
+      "isWarLogPublic": false,
+      "members": 42
+    }
+  ],
+  "paging": {
+    "cursors": {}
+  }
+}

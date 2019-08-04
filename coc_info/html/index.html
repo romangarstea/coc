@@ -1,0 +1,292 @@
+<!doctype html>
+<!--/*
+
+-->
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>MyVzroslye</title>
+
+    <!--style-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tableMembers.css">
+
+    <!--fonts-->
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+
+    <!--scripts-->
+    <script src="../scripts/clan.js"></script>
+
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script></head>
+
+
+
+
+<body>
+    <section>
+        <!-- Header ************************************************************************ -->
+        <header>
+            <nav class="simple-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Regulation</a></li>
+                    <li><a href="#">WAR</a></li>
+                    <li><a href="#">Rank</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <div class="articleBox">
+
+            <div class="articleRow">
+                <!--01 01-->
+                <div class="articleCol">
+                    <div class="a11">
+                        <div id="badge"></div>
+                        <div class="badge_txt">
+                            <div id="badge_txtNameClan"></div>
+                            <div class="badge_elements">
+                                <div id="badge_elementsTag"></div>
+                                <div id="badge_elementsLocationFlag"><img src="../image/ru.jpg" height="17" width="24"/></div>
+                                <div id="badge_elementsLocationTxt">RUSSIA</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--01 02-->
+                <div class="articleCol">
+                    <div class="a12">
+                        <div class="a12_img"><img src="../image/trophies_medium.png" height="39" width="37"/></div>
+                        <div class="a12_txt">
+                            <div class="txtBold" id="clanPoints"></div>
+                            <div class="txtBt">Clan Points</div>
+                        </div>
+                        <div class="a12_img"><img src="../image/atack.png" height="33" width="36"/></div>
+                        <div class="a12_txt">
+                            <div class="txtBold" id="warWins"></div>
+                            <div class="txtBt">War Wins</div>
+                        </div>
+                        <div class="a12_img"><img src="../image/members.png" height="35" width="35"/></div>
+                        <div class="a12_txt">
+                            <div class="txtBold" id="members"></div>
+                            <div class="txtBt">Members</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="articleRow">
+                <!--02 01-->
+                <div class="articleCol">
+                    <div class="a21">
+                        <div id="description"></div>
+                    </div>
+                </div>
+                <!--02 02-->
+                <div class="articleCol">
+                    <div class="a22">
+                        <div class="a22r">
+                            <!--1-->
+                            <div class="a22rc1">Средний возраст</div><div class="a22rc2">32</div>
+                        </div>
+                        <div class="a22r">
+                            <!--2-->
+                            <div class="a22rc1">Уровень цензуры</div><div class="a22rc2">умеренный</div>
+                        </div>
+                        <div class="a22r">
+                            <!--3-->
+                            <div class="a22rc1">Мадамы и месьё</div><div class="a22rc2">
+                            <span id="sexF" class="colRed">6</span>/36</div>
+                        </div>
+                        <div class="a22r">
+                            <!--4-->
+                            <div class="a22rc1">Текучка</div><div class="a22rc2">2 per./day</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="articleRow">
+                <!--03 01-->
+                <div class="articleCol">
+                    <div class="a31">
+                        <div class="a31r txtS">Leader <span class="colRed">1</span></div>
+                        <div class="a31r"></div>
+                        <div class="a31r txtS">Leader <span class="colRed">1</span></div>
+                        <div class="a31r"></div>
+                        <div class="a31r txtS">Leader <span class="colRed">1</span></div>
+                        <div class="a31r txtS">Leader <span class="colRed">1</span></div>
+                    </div>
+                </div>
+                <!--03 02-->
+                <div class="articleCol">
+                    <div class="a32">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- ------------------------------------------------->
+        <!-- table -->
+        <!-- ------------------------------------------------->
+        <div class="tabMembers">
+            <div class="tabMembersRow title">
+
+                <!-- ************************************************************************ -->
+                <!-- 01. Nr -->
+                <!-- ************************************************************************ -->
+                <div class="nr ac" id="sortNr">
+                    <i class="fa fa-sort-desc sort" aria-hidden="true"></i>
+                </div>
+
+
+                <!-- ************************************************************************ -->
+                <!-- 02. Rank  -->
+                <!-- ************************************************************************ -->
+                <div class="rank ac" id="sortClanRank">
+                    <i class="fa fa-sort-desc sort" aria-hidden="true"></i>
+                </div>
+
+
+                <!-- ************************************************************************ -->
+                <!-- 03. League -->
+                <!-- ************************************************************************ -->
+                <div class="league">
+                </div>
+
+
+                <!-- ************************************************************************ -->
+                <!-- 04. Trophies -->
+                <!-- ************************************************************************ -->
+                <div class="trophies ac" id="sortTrophies">
+                    <div style="width: 80px">
+                        <i class="fa fa-sort-desc sort" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+
+                <!-- ************************************************************************ -->
+                <!-- 05. Level  -->
+                <!-- ************************************************************************ -->
+                <div class="level" id="sortLevel">
+                    <div style="width: 40px; text-align: center">
+                        <i class="fa fa-sort-desc sort" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+
+                <!-- ************************************************************************ -->
+                <!-- 06. TH  -->
+                <!-- ************************************************************************ -->
+                <div class="th ac" id="sortTh1">
+                    <i class="fa fa-sort-desc sort" aria-hidden="true"></i>
+                </div>
+
+
+                <!-- ************************************************************************ -->
+                <!-- 07. Nick  <i class="pl1">  -->
+                <!-- ************************************************************************ -->
+                <div class="nik" id="sortNik">
+                    <i class="fa fa-sort-desc sort pl1" aria-hidden="true"></i>
+                </div>
+
+
+                <!-- ************************************************************************ -->
+                <!-- 08. Old  -->
+                <!-- ************************************************************************ -->
+                <div class="age ac">
+                    <i class="fa fa-sort-desc sort" aria-hidden="true"></i>
+                </div>
+
+
+                <!-- ************************************************************************ -->
+                <!-- 08. Name  -->
+                <!-- ************************************************************************ -->
+                <div class="name">
+                    <i class="fa fa-sort-desc sort pl1" aria-hidden="true"></i>
+                </div>
+
+
+                <!-- ************************************************************************ -->
+                <!-- 09. Time  -->
+                <!-- ************************************************************************ -->
+                <div class="time ac">
+                    <i class="fa fa-sort-desc sort" aria-hidden="true"></i>
+                </div>
+
+
+                <!-- ************************************************************************ -->
+                <!-- 11. Time Index  -->
+                <!-- ************************************************************************ -->
+                <div class="timeIndex">
+                    <i class="fa fa-sort-desc sort" aria-hidden="true"></i>
+                </div>
+
+
+                <!-- ************************************************************************ -->
+                <!-- 12. Address  -->
+                <!-- ************************************************************************ -->
+                <div class="address">
+                    <i class="fa fa-sort-desc sort pl1" aria-hidden="true"></i>
+                </div>
+
+
+                <!-- ************************************************************************ -->
+                <!-- 13. Status  -->
+                <!-- ************************************************************************ -->
+                <div class="status ac" id="sortRole">
+                    <i class="fa fa-sort-desc sort" aria-hidden="true"></i>
+                </div>
+
+
+                <!-- ************************************************************************ -->
+                <!-- 14. Old  -->
+                <!-- ************************************************************************ -->
+                <div class="old ac">
+                    <i class="fa fa-sort-desc sort" aria-hidden="true"></i>
+                </div>
+
+
+                <!-- ************************************************************************ -->
+                <!-- 15. Troops  -->
+                <!-- ************************************************************************ -->
+                <div class="troops ac" id="sortTroops">
+                    <i class="fa fa-sort-desc sort" aria-hidden="true"></i>
+                </div>
+
+
+                <!-- ************************************************************************ -->
+                <!-- 16. TH  -->
+                <!-- ************************************************************************ -->
+                <div class="th ac" id="sortTh2">
+                    <i class="fa fa-sort-desc sort" aria-hidden="true"></i>
+                </div>
+
+            </div>
+        </div>
+        <div id="table"></div>
+
+
+
+
+        <!-- Footer *********************************************************************** -->
+        <footer>
+        </footer>
+
+    </section>
+</body>
+
+</html>
